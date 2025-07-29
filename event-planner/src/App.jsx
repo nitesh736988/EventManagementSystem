@@ -1,17 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LoginPage from './features/auth/LoginPage';
-import Dashboard from './features/DashboardPage/Dashboard';
+import AppRoutes from './routes/AppRoutes';
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
-  );
-}
+const App = () => {
+  return <AppRoutes />;
+};
 
 export default App;
